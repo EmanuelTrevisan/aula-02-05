@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package br.edu.ifro;
 
 import br.edu.ifro.modelo.Aluno;
@@ -47,7 +43,7 @@ public class AlunoController implements Initializable {
         
         em.persist(aluno1);
         
-         em.getTransaction().commit();
+        em.getTransaction().commit();
          
     }
 
