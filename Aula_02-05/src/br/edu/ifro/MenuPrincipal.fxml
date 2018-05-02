@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import com.jfoenix.controls.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -13,9 +14,41 @@
       <Label layoutX="52.0" layoutY="38.0" text="Número 1" />
       <TextField fx:id="txtNum1" layoutX="52.0" layoutY="61.0" />
       <TextField fx:id="txtNum2" layoutX="52.0" layoutY="150.0" />
-      <TextField fx:id="txtResultado" layoutX="52.0" layoutY="226.0" />
+      <TextField fx:id="txtResultado" layoutX="52.0" layoutY="226.0" prefHeight="43.0" prefWidth="149.0" />
       <Label layoutX="52.0" layoutY="129.0" text="Número 2" />
-      <Label layoutX="52.0" layoutY="209.0" text="Número 3" />
-      <JFXButton fx:id="btnSoma" layoutX="304.0" layoutY="74.0" onAction="#soma" text="Soma" />
+      <Label layoutX="68.0" layoutY="191.0" prefHeight="43.0" prefWidth="137.0" text="Resultado" textFill="#04c4eb">
+         <font>
+            <Font size="27.0" />
+         </font></Label>
+      <Button fx:id="btnSoma" layoutX="263.0" layoutY="52.0" mnemonicParsing="false" onAction="#soma" prefHeight="43.0" prefWidth="106.0" text="Soma" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSubtracao" layoutX="263.0" layoutY="110.0" mnemonicParsing="false" onAction="#Subtração" prefHeight="43.0" prefWidth="106.0" text="Subtracação" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMultiplicacao" layoutX="263.0" layoutY="166.0" mnemonicParsing="false" onAction="#Multiplicação" prefHeight="43.0" prefWidth="106.0" text="Multiplicação" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDivisao" layoutX="263.0" layoutY="226.0" mnemonicParsing="false" onAction="#Divisão" prefHeight="43.0" prefWidth="106.0" text="Divisão" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="412.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Cadastros">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#abrirCadastroAluno" text="Alunos" />
+                  <MenuItem mnemonicParsing="false" onAction="#fecharProjeto" text="Fechar" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
     </children>
 </AnchorPane>
